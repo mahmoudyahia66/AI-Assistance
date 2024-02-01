@@ -1,0 +1,78 @@
+.card {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    
+  }
+  
+  input[type="file"],
+  input[type="text"] {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  button:disabled {
+    background-color: #a70404;
+    cursor: not-allowed;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+  }
+  
+  .scrolling-div {
+    max-height: 200px;
+    overflow: auto;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #3498db;
+  }
+  top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .chat-image{
+    width: 70px;
+  }
+  .chat-image {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    animation: bounce 5s ease infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  .ai-btn:hover {
+    background-color: #4042a8; 
+    color: #ffffff; 
+  }

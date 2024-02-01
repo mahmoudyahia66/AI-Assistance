@@ -1,0 +1,67 @@
+.w-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .w-input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .w-btn {
+    flex-shrink: 0;
+  }
+  
+  .w-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .info {
+      flex-direction: column;
+    }
+  
+    .w-input {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .w-btn {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  .rotating-image {
+    transform: rotate(0deg);
+    animation: rotateAnimation 5s linear infinite;
+    transform-origin: center center;
+  }
+  
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .w-btn:hover {
+    background-color: #4042a8; 
+    color: #ffffff; 
+  }
